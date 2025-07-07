@@ -1,0 +1,33 @@
+# .gitignore for the Indian Language Translator Streamlit App
+
+# --- Secrets ---
+# This is the most important line. It prevents your secret OpenAI API key
+# from being uploaded to GitHub.
+.env
+
+# --- Python Virtual Environment ---
+# Your project's dependencies (streamlit, openai, etc.) are kept in a
+# virtual environment. This folder is unique to your computer and should
+# not be tracked. Anyone else can recreate it using your requirements.txt file.
+venv/
+.venv/
+env/
+
+# --- Python Cache & Compiled Files ---
+# Python creates these temporary files automatically. They don't need to
+# be shared and just add clutter to the repository.
+__pycache__/
+*.pyc
+
+# --- Streamlit ---
+# Streamlit creates this folder to store configuration and cached data.
+# It's specific to your local setup.
+.streamlit/
+
+# --- Editor & OS Files (Good Practice) ---
+# These are config files from code editors or system files.
+# Ignoring them keeps the project clean for everyone who might work on it.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
